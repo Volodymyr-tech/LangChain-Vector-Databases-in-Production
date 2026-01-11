@@ -1,0 +1,22 @@
+[project]
+name = "langchain-vector-databases-in-production"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Valdemar",email = "vovateslenko.1996.28@gmail.com"}
+]
+readme = "README.md"
+requires-python = "^3.11"
+dependencies = [
+    "transformers (>=4.57.3,<5.0.0)",
+    "langchain-text-splitters (>=1.1.0,<2.0.0)",
+    "langchain-openai (>=1.1.7,<2.0.0)",
+    "langchain-community (>=0.4.1,<0.5.0)",
+    "pypdf (>=6.6.0,<7.0.0)",
+    "python-dotenv (>=1.2.1,<2.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
