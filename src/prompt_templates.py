@@ -3,8 +3,8 @@ from langchain_core.prompts import PromptTemplate
 from config.base import llm
 
 
-class RolePrompting():
-    model = llm
+class RolePrompting:
+    model = llm.chat
     template = """
                 As a futuristic robot band conductor, I need you to help me come up with a song title.
                 What's a cool song title for a song about {theme} in the year {year}?
@@ -15,7 +15,7 @@ class RolePrompting():
         template=template,
     )
 
-    chain = prompt | model.chat
+    chain = prompt | model
 
     @classmethod
     def get_response(cls, input_data:dict):
